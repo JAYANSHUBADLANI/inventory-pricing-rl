@@ -1,0 +1,59 @@
+{
+  "in_sample": {
+    "heuristic": {
+      "mean_reward": -1079.319,
+      "ci_95_low": -1085.755,
+      "ci_95_high": -1072.883,
+      "n_eval_episodes": 300
+    },
+    "contextual_bandit": {
+      "mean_reward": -1513.088,
+      "ci_95_low": -1518.243,
+      "ci_95_high": -1507.932,
+      "n_eval_episodes": 300
+    },
+    "tabular_q_learning": {
+      "mean_reward": -1513.088,
+      "ci_95_low": -1518.243,
+      "ci_95_high": -1507.932,
+      "n_eval_episodes": 300
+    },
+    "reinforce_policy_gradient": {
+      "mean_reward": -425.25,
+      "ci_95_low": -428.746,
+      "ci_95_high": -421.754,
+      "n_eval_episodes": 300
+    }
+  },
+  "determinism_same_seed_same_result": {
+    "heuristic": true,
+    "contextual_bandit": true,
+    "tabular_q_learning": true,
+    "reinforce_policy_gradient": true
+  },
+  "training_cost": {
+    "heuristic": {
+      "environment_interactions": 1606000,
+      "note": "grid search tuning episodes times horizon, zero at deployment"
+    },
+    "contextual_bandit": {
+      "environment_interactions": 1825000
+    },
+    "tabular_q_learning": {
+      "environment_interactions": 1825000
+    },
+    "reinforce_policy_gradient": {
+      "environment_interactions": 1825000
+    }
+  },
+  "config": {
+    "horizon_days": 365,
+    "lead_time": 3,
+    "holding_cost_per_unit": 0.05,
+    "lost_sale_penalty_per_unit": 1.2,
+    "order_fixed_cost": 2.0,
+    "max_order": 40,
+    "seed": 7
+  },
+  "runtime_seconds": 300.0
+}
