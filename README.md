@@ -191,6 +191,10 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install numpy pandas scipy matplotlib torch pytest
 cd src
+# demand_calibration.py reads the cleaned Online Retail II extract from a sibling
+# checkout and will not resolve from a fresh clone. Its output is committed at
+# data/daily_demand_real.csv and data/demand_calibration.json, so skip it and
+# start at run_experiment.py unless you are regenerating the calibration.
 python3 demand_calibration.py
 python3 run_experiment.py
 python3 robustness.py
