@@ -1,5 +1,7 @@
 # Does a learned policy actually beat the heuristic it replaces
 
+[![tests](https://github.com/JAYANSHUBADLANI/inventory-pricing-rl/actions/workflows/tests.yml/badge.svg)](https://github.com/JAYANSHUBADLANI/inventory-pricing-rl/actions/workflows/tests.yml)
+
 A sequential inventory replenishment decision, calibrated to a real, sharply
 seasonal SKU, comparing a tuned order up to heuristic, a contextual bandit,
 tabular Q learning, and a REINFORCE policy gradient agent, then testing
